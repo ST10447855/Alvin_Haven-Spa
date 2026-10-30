@@ -177,3 +177,36 @@ The same five supplied wellness photos are included locally in the `images` fold
 | 2026-09-18 | Added explanatory section comments to the homepage. | Part 1 feedback: Code comments. |
 | 2026-09-18 | Added local `srcset` and `sizes` attributes to content images with matching responsive assets. | Part 2: Responsive images. |
 | 2026-09-18 | Updated README technology, responsive-image and testing documentation. | Part 2: README documentation and evidence preparation. |
+
+
+## Part 3 — JavaScript interaction updates
+
+- Responsive navigation updates its accessible expanded state and closes after a navigation link is selected.
+- The FAQ page now uses keyboard-accessible expand/collapse controls.
+- The Services page includes a live search filter and result count.
+- Existing content images can be opened in an accessible lightbox using click, Enter, or Space; Escape closes it. The original local image assets are retained.
+- Demo form feedback uses native browser validation and does not pretend to send data to a server.
+
+### Part 3 interaction testing
+
+1. Open each page and test the navigation at desktop and mobile widths.
+2. On `faq.html`, expand and collapse each answer using mouse and keyboard.
+3. On `services.html`, search for terms such as `massage`, `recovery`, and a term with no matches.
+4. Click a content image, check its caption, close with Escape, and confirm keyboard focus returns to the image.
+5. Submit the demo form with missing required fields and verify browser validation appears.
+
+
+## Part 3 — Form improvements (Step 3)
+- The Enquiry page now displays the listed price when a service is selected and prepares a pre-filled email requesting confirmation of appointment availability.
+- The Contact page compiles the visitor's contact details, message type and message into an email draft. The visitor must review and send it in their own email application; the static site does not send email directly.
+- The homepage includes the supplied Google Forms newsletter subscription embed. It is a newsletter opt-in and does not replace the separate Contact and Service Enquiry forms.
+- Test both local forms with valid and invalid entries and confirm the email application opens. Test the newsletter embed while online.
+
+
+## Part 3 Changelog
+- Added accessible JavaScript interactions for navigation, FAQ accordion, service filtering, and image lightbox.
+- Added/updated Contact and Service Enquiry form interactions and embedded the provided Google Forms newsletter iframe.
+- Improved unique page titles and meta descriptions and added Open Graph metadata.
+- Added `robots.txt`, `sitemap.xml`, and a Part 3 SEO/testing checklist.
+- Preserved original image assets.
+- Before final deployment, replace the placeholder domain in `robots.txt` and `sitemap.xml` with the actual live URL and complete the manual testing checklist.

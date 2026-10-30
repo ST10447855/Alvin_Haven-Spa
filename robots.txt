@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Replace the domain below with the actual deployed website URL before publishing.
+Sitemap: https://REPLACE-WITH-ALVINS-HAVEN-DOMAIN.example/sitemap.xml

@@ -5,10 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Submit a service enquiry to the Alvin's Haven academic prototype.">
-    <title>Enquiry - Alvin's Haven Wellness Centre</title>
+    <title>Service Enquiry | Alvin's Haven</title>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-</head>
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Alvin's Haven">
+    <meta property="og:title" content="Service Enquiry | Alvin's Haven">
+    <meta property="og:description" content="Ask about a wellness service, request details and prepare an enquiry to Alvin's Haven.">
+
 
 <body>
 
@@ -48,7 +53,7 @@
         <section class="section">
             <div class="container panel">
             <h3>Enquiry Form</h3>
-            <form action="#" method="post" data-demo-form>
+            <form action="mailto:info@alvinshaven.co.za" method="post" enctype="text/plain" data-enquiry-form>
 
                 <!-- Personal Details -->
                 <label for="full-name">Full Name:</label>
@@ -71,6 +76,7 @@
                     <option value="wellness-package">Wellness Package Membership (R450/month)</option>
                     <option value="premium-package">Premium Package Membership (R850/month)</option>
                 </select>
+                <p id="service-response" class="form-response" role="status" aria-live="polite">Choose a service to see its listed price. Appointment availability will need to be confirmed by the centre.</p>
 
                 <!-- Preferred Date -->
                 <label for="preferred-date">Preferred Date:</label>
@@ -92,7 +98,7 @@
                 <!-- Submit Button -->
                 <button type="submit" class="btn">Submit Enquiry</button>
 
-                <p class="form-success" role="status">Thanks. This academic prototype has recorded your submission for demonstration.</p>
+                <p class="form-success" role="status" aria-live="polite">Your enquiry email draft is being prepared. Review it and press Send in your email app.</p>
             </form>
             </div>
         </section>

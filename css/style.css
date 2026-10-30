@@ -364,3 +364,37 @@ blockquote cite { color: var(--brand); font-size: .85rem; }
     .membership-visual { padding: 3rem 0; }
     .membership-visual img, .membership-photo-grid > img { height: 17rem; }
 }
+
+
+/* Part 3 JavaScript interaction styles */
+.faq-toggle {
+  display: block; width: 100%; text-align: left; border: 0; border-radius: .45rem;
+  background: transparent; padding: .45rem 0; color: var(--brand-dark);
+  font: inherit; font-weight: 700; cursor: pointer;
+}
+.faq-toggle::after { content: '+'; float: right; color: var(--brand); font-size: 1.25rem; }
+.faq-toggle.is-open::after { content: '−'; }
+.faq-toggle:focus-visible, .lightbox-image:focus-visible { outline: 3px solid var(--brand); outline-offset: 3px; }
+.faq-answer-js { margin-top: .75rem; }
+.service-search { max-width: 1100px; margin: 0 auto 1rem; padding: 0 1rem; }
+.service-search label { display: block; margin-bottom: .4rem; font-weight: 700; color: var(--brand-dark); }
+.service-search input { width: 100%; padding: .8rem 1rem; border: 1px solid var(--line); border-radius: .55rem; font: inherit; }
+.search-status { margin-top: .4rem; color: var(--muted); font-size: .9rem; }
+.image-lightbox { width: min(92vw, 1000px); max-width: 92vw; max-height: 92vh; padding: 1rem; border: 0; border-radius: .8rem; background: #fff; box-shadow: 0 18px 60px rgba(0,0,0,.3); }
+.image-lightbox::backdrop { background: rgba(10, 20, 15, .78); }
+.image-lightbox > img { display: block; max-width: 100%; max-height: 76vh; width: auto; height: auto; margin: .5rem auto; object-fit: contain; }
+.lightbox-close { display: block; margin-left: auto; border: 0; border-radius: .4rem; padding: .55rem .8rem; background: var(--brand); color: white; font: inherit; cursor: pointer; }
+.lightbox-caption { margin: .5rem 0 0; text-align: center; color: var(--muted); }
+.lightbox-image { cursor: zoom-in; }
+[hidden] { display: none !important; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; }
+}
+
+
+/* Part 3: form feedback and embedded newsletter form */
+.form-response { margin: .75rem 0 1rem; padding: .8rem 1rem; border-left: 3px solid #8a9b79; background: #f5f7f2; border-radius: .35rem; }
+.form-success { display: none; margin-top: 1rem; padding: .9rem 1rem; border-radius: .6rem; background: #eaf6ef; color: #256342; }
+.newsletter-section { padding-top: 2rem; padding-bottom: 3rem; }
+.newsletter-panel { max-width: 850px; margin-inline: auto; }
+.newsletter-embed { width: 100%; overflow: hidden; }
+.newsletter-embed iframe { display: block; width: 100%; max-width: 100%; min-height: 621px; border: 0; }

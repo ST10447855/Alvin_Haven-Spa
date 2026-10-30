@@ -5,10 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Contact details and enquiry form for the Alvin's Haven academic prototype.">
-    <title>Contact - Alvin's Haven Wellness Centre</title>
+    <title>Contact Alvin's Haven | General Enquiries</title>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-</head>
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Alvin's Haven">
+    <meta property="og:title" content="Contact Alvin's Haven | General Enquiries">
+    <meta property="og:description" content="Send a general enquiry, feedback or message using the Alvin's Haven contact form.">
+
 
 <body>
 
@@ -70,7 +75,7 @@
         <section class="section">
             <div class="container panel">
             <h3>Send Us a Message</h3>
-            <form action="#" method="post" data-demo-form>
+            <form action="mailto:info@alvinshaven.co.za" method="post" enctype="text/plain" data-contact-form>
 
                 <!-- Name field -->
                 <label for="contact-name">Full Name:</label>
@@ -101,7 +106,7 @@
                 <!-- Submit button -->
                 <button type="submit" class="btn">Send Message</button>
 
-                <p class="form-success" role="status">Thanks. This academic prototype has recorded your submission for demonstration.</p>
+                <p class="form-success" role="status" aria-live="polite">Your email draft is being prepared. Review it and press Send in your email app.</p>
             </form>
             </div>
         </section>
